@@ -1,0 +1,191 @@
+/* Importation des differents font family*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jeju+Hallasan&display=swap');
+
+:root{
+    --primary-color:#8EA7E9;
+    --secondary-color: #7286D3;
+    --tertiary-color: #eee;
+    --font-poppins: 'Poppins', sans-serif;
+    --font-JejuHallasan: 'JejuHallasan', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body {
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 10px ;
+}
+.section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-size: 1.5rem; 
+    
+}
+
+.image {
+    /* background-color: red; */
+    /* height: 100%; */
+    background-image: url("../images/Blue-ocean.png");
+    background-size: cover;
+    display: flex;
+    flex: 1.1;
+    justify-content: center;
+}
+
+.image h1 {
+  font-size: 4rem;
+  color: var(--tertiary-color);
+  font-family: var(--font-JejuHallasan);
+  font-size: 5rem; 
+  font-weight: 400;
+}
+.connexion {
+    flex: 1;
+    padding: 5rem;
+    /* background-color: black; */
+    
+}
+
+.label{
+    padding:1rem ;
+}
+label{
+    font-family: var(--font-poppins);
+}
+
+h2 {
+ padding-top: 4rem;
+ padding-bottom: 3rem;
+ font-family: var(--font-poppins);
+}
+
+.input {
+    width: 80%;
+    height: 3.5rem;
+    padding-left: 5%;
+    border: solid 0.1rem;
+    border-radius: 1.5rem;
+    border-color: var(--secondary-color);
+    background-color: var(--tertiary-color);
+    font-family: var(--font-poppins);
+}
+
+.oublie {
+    display: flex;
+    width: 84%;
+    justify-content: right;
+}
+
+.oublie a{
+    color: var(--secondary-color);
+    font-family: var(--font-poppins);
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    color: #eee;
+    height: 3.5rem;
+    width: 15rem;
+    border: solid 0.1rem;
+    border-radius: 1rem;
+    background-color:var(--secondary-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s ease-out;
+    font-family: var(--font-poppins);
+}
+button:hover{
+    background-color: white;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.ou_avec {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;    
+}
+.ligne1{
+    padding-left: 7rem;
+}
+.ligne2{
+    padding-right: 7rem;
+}
+hr{
+    border: solid gray 0.1rem;
+    width: 19rem;
+      
+}
+
+span{
+    font-size: 1.5rem;   
+}
+
+.icons {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    padding-top: 10rem; 
+    width: 100vw;
+    background-color: var(--tertiary-color);
+    justify-content: center;
+}
+img{
+    border: 0.2rem solid gray;
+    border-radius: 5rem;
+    width: 5rem;
+    height: 5rem;
+  
+}
+
+/*  Responsive */
+@media screen and (max-width: 480px)
+{
+    html{
+        font-size: 7px;
+    }
+    .section {
+        flex-direction: column; 
+    }
+    hr{
+        width: 10rem;
+    }
+    .image {
+       padding: 10rem;
+    }
+    .image h1 {
+        visibility: hidden;
+        display: none;
+    }
+    .connexion {
+        padding: 1rem;
+    }
+    .connexion h2{
+        font-size: 3rem;
+    }
+    button{
+        margin-top: 5rem;
+        width: 20rem;
+        height: 5rem;
+    }
+    .icons{
+        margin-bottom: 8rem;
+        height: 0.3rem;
+    }
+}
