@@ -49,7 +49,7 @@ html {
 .connexion {
     flex: 1;
     padding: 5rem;
-    /* background-color: black; */
+    background-color: var(--secondary-color); 
     
 }
 
@@ -100,7 +100,7 @@ button {
     width: 15rem;
     border: solid 0.1rem;
     border-radius: 1rem;
-    background-color:var(--secondary-color);
+    background-color:var(--primary-color);
     font-weight: bold;
     cursor: pointer;
     transition: 0.25s ease-out;
