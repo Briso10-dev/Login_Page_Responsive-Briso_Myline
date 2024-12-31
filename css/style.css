@@ -1,0 +1,211 @@
+/* Importation des differents font family*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jeju+Hallasan&display=swap');
+
+:root{
+    --primary-color:#8EA7E9;
+    --secondary-color: #7286D3;
+    --tertiary-color: #eee;
+    --font-poppins: 'Poppins', sans-serif;
+    --font-JejuHallasan: 'JejuHallasan', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+html {
+    font-size: 10px ;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-size: 1.5rem; 
+    
+}
+
+.image {
+    /* background-color: red; */
+    /* height: 100%; */
+    background-image: url("../images/Blue-ocean.png");
+    background-size: cover;
+    flex: 1;
+    justify-content: center;
+}
+
+.image h1 {
+  font-size: 4rem;
+  color: var(--tertiary-color);
+  font-family: var(--font-JejuHallasan);
+  font-size: 5rem; 
+  font-weight: 400;
+}
+.connexion {
+    display : flex;
+    gap : 5rem;
+    flex-direction: column  ;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex: 1;
+    padding-left: 2rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+    
+}
+form h1{
+    font-size: 4rem;
+    font-family: var(--font-poppins);
+}
+.label{
+    padding:1rem ;
+    display : flex;
+    flex-direction: column;
+    gap:0.7rem
+}
+label{
+    font-family: var(--font-poppins);
+    font-size: 2rem;
+}
+
+input {
+    width: 40rem;
+    height: 4rem;
+    padding-left: 5%;
+    border: solid 0.1rem;
+    border-radius: 1rem;
+    border-color: var(--secondary-color);
+    background-color: var(--tertiary-color);
+    font-family: var(--font-poppins);
+    outline: none;
+    font-size: 1.5rem;
+}
+
+.oublie {
+    display: flex;
+    justify-content: right;
+}
+
+.oublie a{
+    color: var(--secondary-color);
+    font-family: var(--font-poppins);
+}
+.oublie a:hover{
+    transform: scale(1.2); 
+}
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    color: #eee;
+    height: 4.5rem;
+    width: 18rem;
+    border: solid 0.1rem;
+    border-radius: 1rem;
+    background-color:var(--primary-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s ease-out;
+    font-family: var(--font-poppins);
+    font-size: 2rem;
+}
+button:hover{
+    background-color: white;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.ou_avec {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap : 3rem;
+}
+.ligne1{
+    padding-left: 7rem;
+}
+.ligne2{
+    padding-right: 7rem;
+}
+hr{
+    border: solid gray 0.1rem;
+    width: 12rem;
+      
+}
+
+span{
+    font-size: 1.5rem;   
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    gap : 12rem;
+}
+
+.logo {
+    padding-top: 10rem; 
+    width: 100vw;
+    background-color: var(--tertiary-color);
+    justify-content: center;
+}
+img{
+    border: 0.2rem solid gray;
+    border-radius: 5rem;
+    width: 5rem;
+    height: 5rem;
+}
+img:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.2); 
+}
+/*  Responsive */
+@media screen and (max-width: 430px)
+{
+    html{
+        font-size: 7px;
+    }
+    .section {
+        flex-direction: column; 
+    }
+    hr{
+        width: 10rem;
+    }
+    .image {
+       padding: 10rem;
+    }
+    .image h1 {
+        visibility: hidden;
+        display: none;
+    }
+    .connexion {
+        flex: 1;
+        padding: 1rem;
+        background-color: var(--secondary-color); 
+    }
+    .connexion h2{
+        font-size: 3rem;
+    }
+    button{
+        margin-top: 5rem;
+        width: 20rem;
+        height: 5rem;
+    }
+    .icons{
+        margin-bottom: 8rem;
+        height: 0.3rem;
+    }
+}
