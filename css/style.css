@@ -21,6 +21,8 @@ html {
 
 body {
     overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
 }
 
 section {
@@ -32,8 +34,6 @@ section {
 }
 
 .image {
-    /* background-color: red; */
-    /* height: 100%; */
     background-image: url("../images/Blue-ocean.png");
     background-size: cover;
     flex: 1;
@@ -134,16 +134,9 @@ button:hover{
     align-items: center;
     gap : 3rem;
 }
-.ligne1{
-    padding-left: 7rem;
-}
-.ligne2{
-    padding-right: 7rem;
-}
 hr{
     border: solid gray 0.1rem;
-    width: 12rem;
-      
+    width: 16rem;
 }
 
 span{
@@ -154,13 +147,6 @@ span{
     display: flex;
     justify-content: space-around;
     gap : 12rem;
-}
-
-.logo {
-    padding-top: 10rem; 
-    width: 100vw;
-    background-color: var(--tertiary-color);
-    justify-content: center;
 }
 img{
     border: 0.2rem solid gray;
@@ -178,34 +164,38 @@ img:hover{
     html{
         font-size: 7px;
     }
-    .section {
+    section {
+        display: flex;
         flex-direction: column; 
     }
     hr{
-        width: 10rem;
+        width: 13rem;
     }
     .image {
-       padding: 10rem;
+        padding: 10rem;
+        width: 100%;
+        height: 100%;
     }
     .image h1 {
         visibility: hidden;
         display: none;
     }
     .connexion {
-        flex: 1;
         padding: 1rem;
         background-color: var(--secondary-color); 
     }
-    .connexion h2{
+    .connexion h1{
         font-size: 3rem;
     }
+    form {
+        gap: 1rem; 
+    }
+
+    input {
+        width: 30rem; 
+    }
     button{
-        margin-top: 5rem;
         width: 20rem;
         height: 5rem;
-    }
-    .icons{
-        margin-bottom: 8rem;
-        height: 0.3rem;
     }
 }
