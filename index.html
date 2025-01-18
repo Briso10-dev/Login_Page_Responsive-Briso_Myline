@@ -19,17 +19,18 @@
         <!-- Partie engregistrement utilisateur -->
         <div class="connexion">
 
-            <form name="Brisoform">
+            <form id="form" action="/" method="get" >
                 <h1> Connexion a Blue Ocean</h1>
                 <!-- champ email -->
                 <div class="label">
                     <label for="email"> Email :</label>
-                    <input name="email" type="email" id="email" placeholder="abcexample@.com" required>
+                    <input id="email" name="email" type="email" placeholder="abcexample@.com" required>
                 </div>
                 <!-- champ mot de passe -->
                 <div class="label">
                     <label for="password"> Mot de passe:</label> 
-                    <input type="" placeholder="**********" name="password required id=password">
+                    <input id="password" name="password" type="password" placeholder="**********" required>
+                    <p id="error"></p>
                     <div class="oublie">
                         <a href="/">Mot de passe oublié?</a>
                     </div>
