@@ -1,9 +1,14 @@
-# Login page du site web : Blue Ocean
+# Login Page : Blue Ocean
 
 ## Description
-Ici il s'agit de realiser le login page du site en utilisant les technologies : HTML et CSS tout en respectant le design obtenue sur Figma.
+It consist of designing a login page through a form where every user can enter his informations.
 
 ## Objectives
-Donner une vue facile utilisateur afin qu'ils/elles puissent se connecter a traver un compte email associer a un mot de passe.
+Have a clear view and understanding on how forms work and facilitating users friendly usage.
 
-# Markdown
+## Tech Stack
+ HTML5 AND CSS3
+
+## Authors
+- [@Kouam Brice](https://github.com/Briso10-dev)
+- [@Myline](https://github.com/myline1)
